@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+
+{% if result %}
+rating for this review, {{ result }}!
+{% endif %}
+
+{{ wtf.quick_form(form) }}
+{% endblock %}
